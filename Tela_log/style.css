@@ -60,11 +60,12 @@ body {
     color: white;    
 }
 
-#telamensagem  p:last-child {
+#telamensagem a {
     color: hsl(0, 1%, 85%);
     font-weight: bold;
     font-size: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+    text-decoration: none;
 }
 
 #telalogin {
