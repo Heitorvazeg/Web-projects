@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Opens Sans", "Times New Roman";
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/ensolarado.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.tela-tempo {
+    background-color: hsl(0, 2%, 12%);
+    opacity: 90%;
+    color: hsl(0, 1%, 53%);
+    min-height: 360px;
+    min-width: 350px;
+    width: 30vw;
+    height: 20vh;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 2px 10px 10px hsl(0, 2%, 9%);
+}
+
+#myInput {
+    border: none;
+    background: hsl(0, 2%, 22%);
+    padding: 5px;
+    margin: 10px;
+    margin-top: 20px;
+    color: hsl(0, 1%, 53%);
+    border-radius: 12px;
+    font-size: medium;
+}
+
+#mySubmit {
+    padding: 6px;
+    margin: 2;
+    background-color: hsl(0, 2%, 22%);
+    border-radius: 25px;
+    border: none;
+}

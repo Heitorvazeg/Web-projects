@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <div class="tela-tempo">
+            <div class="cidade-pesquisa">
+                <input type="search" placeholder="Ex: Goiânia, Goiás, Brasil" id="myInput">
+                <button id="mySubmit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="dados">
+                <div class="titulo">
+                    <h2 id="tempoem">Tempo em </h2>
+                </div>
+                <div class="tempo">
+                    <h3 id="temp">
+                        23ºC
+                    </h3><br>
+                <div class="clima">
+                    <i class="fa-solid fa-cloud-showers-heavy"></i>
+                    <h3 id="cond"> Chuvoso</h3>
+                </div><br>
+                    <h4 id="umid">Umidade:20%</h4>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="src/script/script.js" defer></script>
+</body>
+</html>

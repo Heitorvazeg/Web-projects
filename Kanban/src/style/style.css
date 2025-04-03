@@ -23,6 +23,7 @@ body {
     padding: 24px;
     width: 100%;
     height: 90vh;
+    overflow-x: auto;
 }
 
 .kanban-column {
@@ -34,5 +35,36 @@ body {
     border-radius: 12px;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 1);
     padding: 12px;
-    overflow: hidden;
+    overflow-y: auto;
+    position: relative;
+    min-width: 252px;
+}
+
+.kanban-column::after{
+    position: absolute;
+    content: '';
+    height: 5px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.kanban-column[data-id="1"]::after {
+    background-color: hsl(180, 98%, 41%);
+}
+
+.kanban-column[data-id="2"]::after {
+    background-color: hsl(133, 98%, 41%);
+}
+
+.kanban-column[data-id="3"]::after {
+    background-color: hsl(66, 98%, 41%);
+}
+
+.kanban-column[data-id="4"]::after {
+    background-color: hsl(357, 98%, 41%);
+}
+
+.kanban-column[data-id="5"]::after {
+    background-color: hsl(276, 98%, 41%);
 }
