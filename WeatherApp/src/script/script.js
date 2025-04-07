@@ -1,9 +1,12 @@
 import key from "../config.js";
+import config from "./maps.js"
+const {traducoes, icones, imagens} = config;
+
 const button = document.getElementById("mySubmit");
 
 button.onclick = async function Search() {
     try {
-        const inputs = document.getElementById("myInput").value.toLowerCase().trim().split(",");
+        let inputs = document.getElementById("myInput").value.toLowerCase().trim().split(",");
 
         if (inputs.length < 1 || inputs[0] === "") {
             window.alert("Por favor, insira os dados corretamente!");
@@ -25,19 +28,22 @@ button.onclick = async function Search() {
             const tempo = await data.json();
 
             const temperatura = tempo.main.temp;
-            const condicao = tempo.weather.main;
+            const condicao = tempo.weather[0].main;
             const umidade = tempo.main.humidity;
             const cidade = tempo.name;
 
             const temp = document.getElementById("temp");
             const cond = document.getElementById("cond");
             const umid = document.getElementById("umid");
-            const tempoem = document.getElementById("tempoem")
-
+            const tempoem = document.getElementById("tempoem");
+            const icone = document.getElementById("icone");
+            
+            document.body.style.backgroundImage = `url('${imagens[condicao]}')`;
             tempoem.textContent = `Tempo em ${cidade}`;
             temp.textContent = temperatura.toFixed(1) + " Cº";
-            cond.textContent = condicao;
-            umid.textContent = umidade + "%";
+            icone.innerHTML = icones[condicao] || "";
+            cond.textContent = traducoes[condicao] || condicao;
+            umid.textContent = `Umidade: ${umidade}%`;
         }
     }
     
@@ -46,3 +52,8 @@ button.onclick = async function Search() {
         console.error(error);
     }
 }
+
+window.onload = () => {
+    document.getElementById("myInput").value = "Goiânia, Goiás, Brasil";
+    document.getElementById("mySubmit").click();
+};

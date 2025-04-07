@@ -11,7 +11,7 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-image: url('../images/ensolarado.jpg');
+    transition: background-image 1s ease-in-out;
     background-size: cover;
     background-position: center;
 }
@@ -49,4 +49,31 @@ body {
     background-color: hsl(0, 2%, 22%);
     border-radius: 25px;
     border: none;
+}
+
+#mySubmit:hover {
+    background-color: hsl(0, 2%, 32%);
+}
+
+#mySubmit:active {
+    background-color: hsl(0, 2%, 42%);
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    margin: 10px;
+}
+
+.clima {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+#icone {
+    font-size: 50px;
 }
