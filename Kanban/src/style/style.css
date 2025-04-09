@@ -35,7 +35,6 @@ body {
     border-radius: 12px;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 1);
     padding: 12px;
-    overflow-y: auto;
     position: relative;
     min-width: 252px;
 }
@@ -50,21 +49,102 @@ body {
 }
 
 .kanban-column[data-id="1"]::after {
-    background-color: hsl(180, 98%, 41%);
+    background-color: hsl(180, 98%, 31%);
 }
 
 .kanban-column[data-id="2"]::after {
-    background-color: hsl(133, 98%, 41%);
+    background-color: hsl(133, 98%, 31%);
 }
 
 .kanban-column[data-id="3"]::after {
-    background-color: hsl(66, 98%, 41%);
+    background-color: hsl(66, 98%, 31%);
 }
 
 .kanban-column[data-id="4"]::after {
-    background-color: hsl(357, 98%, 41%);
+    background-color: hsl(357, 98%, 31%);
 }
 
 .kanban-column[data-id="5"]::after {
-    background-color: hsl(276, 98%, 41%);
+    background-color: hsl(276, 98%, 31%);
+}
+
+.kanban-title {
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    width: 100%;
+}
+
+.add-card {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: none;
+    box-shadow: 0px 1px 1px;
+    background-color: rgb(215, 234, 247);
+    margin-right: auto;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.kanban-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.kanban-card {
+    border-radius: 12px;
+    box-shadow: 0px 5px 10px rgb(39, 39, 39);
+    padding: 10px;
+}
+
+.kanban-column[data-id="1"] .badge-high {
+    background-color: hsl(180, 98%, 31%);
+}
+
+.kanban-column[data-id="2"] .badge-high {
+    background-color: hsl(133, 98%, 31%);
+}
+
+.kanban-column[data-id="3"] .badge-high {
+    background-color: hsl(66, 98%, 31%);
+}
+
+.kanban-column[data-id="4"] .badge-high {
+    background-color: hsl(357, 98%, 31%);
+}
+
+.kanban-column[data-id="5"] .badge-high {
+    background-color: hsl(276, 98%, 31%);
+}
+
+.badge-high {
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.card-infos {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-icons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.image {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    margin-left: auto;
+}
+
+.dragging {
+    opacity: 0.5;
 }
