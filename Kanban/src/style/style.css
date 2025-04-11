@@ -118,11 +118,30 @@ body {
     background-color: hsl(276, 98%, 31%);
 }
 
+.top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .badge-high {
     border-radius: 12px;
     display: flex;
     justify-content: center;
     margin: 5px;
+    width: 80%;
+}
+
+.close-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: none;
+    box-shadow: 0px 1px 1px;
+    background-color: rgb(215, 234, 247);
+    margin-right: auto;
+    cursor: pointer;
+    margin-left: auto;
 }
 
 .card-infos {
