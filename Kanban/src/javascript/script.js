@@ -1,5 +1,5 @@
 import config from './card.js';
-const {criarCard, fecharCard} = config;
+const {criarCard, fecharCard, editarCard} = config;
 
 const columns = document.querySelectorAll(".kanban-column");
 const addcards = document.querySelectorAll(".add-card");
@@ -7,16 +7,15 @@ const addcards = document.querySelectorAll(".add-card");
 document.addEventListener("dragstart", e => {
     if (e.target.classList.contains("kanban-card")) {
         e.target.classList.add("dragging");
-    }
+    };
 });
-
 
 document.addEventListener("dragend", e => {
     if (e.target.classList.contains("kanban-card")) {
         e.target.classList.remove("dragging");
-    }
-
+    };
 });
+
 columns.forEach(column => {
     column.addEventListener("dragover", e => {
         e.preventDefault();
@@ -30,7 +29,7 @@ addcards.forEach(button => {
         const coluna_card = button.closest(".kanban-column");
         const card_novo = criarCard();
         coluna_card.appendChild(card_novo);
-});
+    });
 });
 
 document.addEventListener("click", e => {
@@ -38,6 +37,14 @@ document.addEventListener("click", e => {
     if (btn) {
         const card = btn.closest(".kanban-card");
         fecharCard(card);
-    }
+    };
+});
+
+document.addEventListener("click", e => {
+    const btn = e.target.closest(".edit-button");
+    if (btn) {
+        const card = btn.closest(".kanban-card");
+        editarCard(card);
+    };
 });
 

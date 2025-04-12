@@ -9,19 +9,27 @@ export function criarCard() {
     const badge = document.createElement('div');
     badge.className = 'badge-high';
     const badge_span = document.createElement('span');
-    badge_span.textContent = 'Alta Prioridade';
+    const input = document.createElement('input');
+    input.setAttribute('readonly', 'true');
+    input.className = 'input-badge';
+    badge_span.appendChild(input);
     badge.appendChild(badge_span);
 
     const close_button = document.createElement('button');
     close_button.className = 'close-button';
     close_button.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+    const edit_button = document.createElement('button');
+    edit_button.className = 'edit-button';
+    edit_button.innerHTML = '<i class="fa-solid fa-pen-to-square"></i>';
 
     top.appendChild(badge);
+    top.appendChild(edit_button);
     top.appendChild(close_button);
 
-    const card_title = document.createElement('p');
+    const card_title = document.createElement('textarea');
+    card_title.setAttribute('readonly', 'true');
     card_title.className = 'card-title';
-    card_title.textContent = 'Revisar documento do projeto'
+
 
     const card_infos = document.createElement('div');
     card_infos.className = 'card-infos';
@@ -57,4 +65,22 @@ export function fecharCard(card) {
     card.remove();
 }
 
-export default {fecharCard, criarCard};
+export function editarCard(card) {
+    const input = card.querySelector('.input-badge');
+    const textarea = card.querySelector('.card-title');
+    const editButton = card.querySelector('.edit-button');
+
+    if (!input || !textarea || !editButton) return;
+
+    const verificacao = input.readOnly;
+
+    input.readOnly = !verificacao;
+    textarea.readOnly = !verificacao;
+
+    editButton.innerHTML = !verificacao 
+        ? '<i class="fa-solid fa-pen-to-square"></i>'
+        : '<i class="fa-solid fa-floppy-disk"></i>';
+}
+
+
+export default {fecharCard, criarCard, editarCard};
