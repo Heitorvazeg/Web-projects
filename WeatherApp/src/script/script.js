@@ -16,7 +16,7 @@ button.onclick = async function Search() {
 
         if (!response.ok) {
             window.alert("Algo deu errado!")
-            throw new Error("Erro de Fetch!")
+            throw new Error("Erro de Fetch lat, lon!")
         }
 
         else {
@@ -25,6 +25,12 @@ button.onclick = async function Search() {
             const lon = location[0].lon;
 
             const data = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=metric`);
+
+            if (!data.ok) {
+                window.alert("Algo deu errado!")
+                throw new Error("Erro de Fetch Weather")
+            }
+            
             const tempo = await data.json();
 
             const temperatura = tempo.main.temp;
