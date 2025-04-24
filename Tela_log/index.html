@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela Login</title>
-    <link rel = "stylesheet" href = "style.css">
+    <link rel = "stylesheet" href = "style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
@@ -30,13 +30,14 @@
                         <i class="fa-solid fa-envelope"></i>
                         <i class="fa-solid fa-lock"></i>
                     </div>
-                    <input type = "text" placeholder = "Nome:" class = "input">
-                    <input type = "email" placeholder = "Email:" class = "input">
-                    <input type = "password" placeholder = "Senha" class = "input">
+                    <input type = "text" placeholder = "Nome:" class = "input" id="nome">
+                    <input type = "email" placeholder = "Email:" class = "input" id="email">
+                    <input type = "password" placeholder = "Senha" class = "input" id="senha">
                 </div>
                 <button id = "cadastrar" class = "button">Cadastrar</button>
             </div>
         </div>
     </main>
+    <script type="module" src="script/func.js"></script>
 </body>
 </html>
