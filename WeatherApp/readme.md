@@ -1,0 +1,1 @@
+Aplicativo de previsão do tempo; fetch na API WeatherAPI para geolocalização e dados de tempo; Front-End responsiva ao resultado da busca.

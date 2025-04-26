@@ -1,0 +1,1 @@
+Projeto Front-End tela de login em conjunto ao Back-Tela-Log; tela de login com cadastro e login; fetch no Back-End para cadastro em banco de dados e validação para login.

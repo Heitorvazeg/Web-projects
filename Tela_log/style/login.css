@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: hsl(0, 2%, 88%)
+}
+
+#tela {
+    width: 80vw;
+    height: 70vh;
+    max-width: 700px;
+    max-height: 600px;
+    background-color: hsla(0, 0%, 93%, 0.87);
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px gray;
+    display: flex;
+}
+
+#login {
+    position: relative;
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+#telacadastro {
+    position: relative;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 2%, 9%);
+}
+
+#telacadastro h1 {
+    position: relative;
+    top: -80px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    text-shadow: 5px 5px 5px rgb(66, 66, 66);
+    color: hsl(0, 3%, 66%);
+}

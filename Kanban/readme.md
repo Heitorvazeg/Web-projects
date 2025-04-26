@@ -1,0 +1,1 @@
+Kanban arrastável e editável feito com Javascript, HTML e CSS; uso de DOM para manipulação dos cards; lógica para criar e apagar cards; botão editar para personalizar card.
