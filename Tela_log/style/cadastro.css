@@ -119,6 +119,7 @@ body {
     gap: 42px;
     z-index: 1;
 }
+
 .titulo {
     position: relative;
     top: -40px;

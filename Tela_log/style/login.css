@@ -34,6 +34,73 @@ body {
     background-color: white;
 }
 
+#titulo {
+    position: absolute;
+    top: 20%;
+}
+
+#inputs {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    top: 10px;
+    max-width: 400px;
+}
+
+.input {
+    border: none;
+    background-color: rgb(226, 225, 225);
+    width: 300px;
+    height: 20px;
+    position: relative;
+    text-indent: 20px;
+}
+
+#icones {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: black;
+    position: absolute;
+    left: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    gap: 32px;;
+    z-index: 1;
+}
+
+#login a {
+    color: black;
+    position: relative;
+    top: 10rem;
+    text-decoration: none;
+}
+
+#entrar {
+    font-size: medium;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    border-radius: 15px;
+    border: 10px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: hsl(0, 0%, 0%);
+    color: rgb(224, 223, 223);
+    position: absolute;
+    bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: hsl(0 0% 10%);
+    }
+    &:active {
+        background-color: hsl(0 0% 20%);
+    }
+}
+
 #telacadastro {
     position: relative;
     width: 35%;
@@ -43,6 +110,8 @@ body {
     align-items: center;
     justify-content: center;
     background-color: hsl(0, 2%, 9%);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 #telacadastro h1 {
@@ -52,4 +121,36 @@ body {
     font-size: 50px;
     text-shadow: 5px 5px 5px rgb(66, 66, 66);
     color: hsl(0, 3%, 66%);
+    top: -100px;
+}
+
+#telacadastro p {
+    color: hsl(0, 1%, 86%);
+    position: relative;
+    bottom: -50px;
+}
+
+#mudarParaCadastrar {
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 15px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    background-color: hsl(0, 0%, 0%);
+    border: 2px solid hsl(0, 50%, 100%);
+    color: white;
+    cursor: pointer;
+    position: relative;
+    bottom: -100px;
+
+    &:hover {
+        background-color: hsl(0, 0%, 10%);
+    }
+    &:active {
+        #entrar:active {
+            background-color: hsl(0, 0%, 20%);
+        }
+    }
 }
