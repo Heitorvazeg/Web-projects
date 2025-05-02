@@ -1,8 +1,8 @@
 import './Tempo.css';
 
-function BlocoTempo({tempo, label}) {
+function BlocoTempo({tempo}) {
     return (
-            <div className="bloco" id={`bloco${label}`}>
+            <div className="bloco">
                 {tempo}
             </div>
                 )

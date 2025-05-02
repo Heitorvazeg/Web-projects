@@ -1,0 +1,10 @@
+.bloco {
+    width: 7em;
+    height: 9em;
+    font-size: large;
+    background: linear-gradient(90deg, rgb(248, 238, 238), rgb(189, 188, 188));
+    box-shadow: 3px, 3px, 3px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
