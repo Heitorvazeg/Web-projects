@@ -5,25 +5,38 @@
 }
 
 body {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     background-image: url("./assets/fundo-abstrato-aquarela_23-2149069668.avif");
     background-attachment: fixed;
     background-size: cover;
     justify-content: center;
-    align-items: center;
 }
 
 .relogio {
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 2em;
 }
 
-.bloco {
+.horas {
     display: flex;
     flex-direction: row;
-    margin: 2em;
-    border-radius: 12px;
-    box-shadow: 3px, 3px, 3px;
+    gap: 5px;
+}
+
+.minutos {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.segundos {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
 }
