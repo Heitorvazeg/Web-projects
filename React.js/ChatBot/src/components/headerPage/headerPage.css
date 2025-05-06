@@ -1,0 +1,26 @@
+header {
+    width: 100%;
+    background: linear-gradient(90deg, hsl(0, 0%, 05%), hsl(0, 0%, 13%), hsl(0, 0%, 8%));
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    height: 4rem;
+}
+
+#titulo {
+    color: white;  
+}
+
+#clean {
+    position: absolute;
+    right: 6rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 30%;
+    color: black;
+    &:hover {
+        cursor: pointer;
+    }
+}
