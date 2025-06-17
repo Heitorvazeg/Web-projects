@@ -1,0 +1,25 @@
+.servicos {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, rgb(2, 0, 80), rgb(2, 0, 20));
+}
+
+.ts {
+    height: auto;
+}
+
+.esquerdaT {
+    margin: 2rem;
+    float: left;
+    height: 5rem;
+}
+
+.direitaT {
+    float: right;
+    height: 5rem;
+}
+
+.imagem {
+    width: 2rem;
+    height: 2rem;
+}

@@ -1,0 +1,8 @@
+.contato {
+    height: 100vh;
+    width: 100%;
+    height: auto;
+    background: url(../../../assets//flor.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,10 @@
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    color: white;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    gap: 10%;
+}
