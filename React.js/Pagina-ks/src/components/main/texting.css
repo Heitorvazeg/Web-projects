@@ -1,6 +1,6 @@
 span {
     padding: 3px;
-    font-size: 3.5rem;
+    font-size: 4rem;
     animation: piscando 0.7s step-end infinite;
 }
 

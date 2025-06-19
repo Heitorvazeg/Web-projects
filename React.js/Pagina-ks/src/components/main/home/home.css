@@ -15,8 +15,9 @@
     flex-direction: column;
     align-items: center;
     font-family: "Playfair Display", "Open Sans";
+    margin: 1rem;
 }
 
-.titulo {
-    font-size: 4rem;
+.imageLogo {
+    margin-bottom: 2rem;
 }

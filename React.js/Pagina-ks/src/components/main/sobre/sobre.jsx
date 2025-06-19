@@ -12,23 +12,37 @@ function Sobre() {
                     </p>
                 </div>
                 <div className="trabalhos">
-                    <div className="suporte">
-                        <div className="descricaoHidden">
-                                <p></p>
+                    <div className="suporteDiv fade-in-section">
+                        <h1 className="h">Suporte em TI</h1>
+                        <div className="suporte fade-in-section">
+                            <div className="descricaoHidden">
+                                <p className="p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Fugiat dolore recusandae quas cum dolorem atque eum exercitationem vitae!
+                                Sit deserunt possimus assumenda nisi beatae 
+                                repudiandae ipsam in quos delectus unde?</p>
                             </div>
-                            <p></p>
                         </div>
-                    <div className="infra fade-in-section">
-                        <div className="descricaoHidden">
-                            <p></p>
-                        </div>
-                        <p></p>
                     </div>
-                    <div className="cyber">
-                        <div className="descricaoHidden">
-                            <p></p>
+                    <div className="infraDiv fade-in-section">
+                        <h1 className="h">Infraestrutura de Redes</h1>
+                        <div className="infra fade-in-section">
+                            <div className="descricaoHidden">
+                                <p className="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere delectus a id, nemo exercitationem magni,
+                                repellendus modi ducimus dolores eligendi libero aliquam atque tempore
+                                reiciendis totam, explicabo in impedit nihil!</p>
+                            </div>
                         </div>
-                        <p></p>
+                    </div>
+                    <div className="cyberDiv fade-in-section">
+                        <h1 className="h">Cibersegurança</h1>
+                        <div className="cyber fade-in-section">
+                            <div className="descricaoHidden">
+                                <p className="p">Lorem ipsum dolor sit, 
+                                amet consectetur adipisicing elit. Esse cum atque, debitis 
+                                soluta amet nobis aperiam adipisci pariatur hic. Ad dignissimos
+                                veniam, dolorum officiis vel saepe non rerum odit error?</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
