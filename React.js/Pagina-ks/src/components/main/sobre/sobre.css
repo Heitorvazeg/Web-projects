@@ -62,16 +62,20 @@
 }
 
 .suporte {
-    background-image: url(../../../assets/suporte.jpg);
+    background-image: none;
     background-size: cover;
     margin: 1.5rem;
     height: 30rem;
     width: 75%;
     border-radius: 15px;
     box-shadow: 0px 7px 7px rgb(0, 0, 0);
-    transition: transform 0.3s ease-in-out;
+    transition: all 0.5s ease;
     position: relative;
     overflow: hidden;
+}
+
+.suporte.fade-in-section.is-visible {
+    background-image: url(../../../assets/suporte.jpg);
 }
 
 .suporte::before {
@@ -116,16 +120,20 @@
 }
 
 .cyber {
-    background-image: url(../../../assets/cyber.jpg);
+    background-image: none;
     background-size: cover;
     margin: 1.5rem;
     height: 30rem;
     width: 75%;
     border-radius: 15px;
     box-shadow: 0px 7px 7px rgb(0, 0, 0);
-    transition: transform 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
     position: relative;
     overflow: hidden;
+}
+
+.cyber.fade-in-section.is-visible {
+    background-image: url(../../../assets/cyber.jpg);
 }
 
 .cyber::before {
@@ -161,16 +169,20 @@
 }
 
 .infra {
-    background-image: url(../../../assets/infra.jpg);
+    background-image: none;
     background-size: cover;
     margin: 1.5rem;
     height: 30rem;
     width: 75%;
     border-radius: 15px;
     box-shadow: 0px 7px 7px rgb(0, 0, 0);
-    transition: transform 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
     position: relative;
     overflow: hidden;
+}
+
+.infra.fade-in-section.is-visible {
+    background-image: url(../../../assets/infra.jpg);
 }
 
 .infra::before {

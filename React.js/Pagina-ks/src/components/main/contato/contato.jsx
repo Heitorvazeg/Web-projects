@@ -4,7 +4,7 @@ import Footer from "../../footer/footer";
 function Contato() {
     return (
         <section className="contato" id="contato">
-            <h1></h1>
+            <h1 className="hC">Contato</h1>
             <div className="imagemContatoContatar">
                 <div className="imagemContato">
                 </div>

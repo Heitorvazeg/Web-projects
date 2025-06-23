@@ -1,10 +1,12 @@
 span {
     padding: 3px;
     font-size: 4rem;
+    border-right: 1px solid white;
     animation: piscando 0.7s step-end infinite;
 }
 
 @keyframes piscando {
-    0% {border-right: none}
-    50% {border-right: 1px solid white;}
+    0% {border-color: transparent}
+    50% {border-color: white}
+    100% {border-color: transparent;}
 }

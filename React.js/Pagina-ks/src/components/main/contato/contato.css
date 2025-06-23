@@ -1,4 +1,6 @@
 .contato {
+    display: flex;
+    flex-direction: column;
     height: auto;
     width: 100%;
     height: auto;
@@ -7,6 +9,16 @@
     background-repeat: no-repeat;
 }
 
+.hC {
+    text-align: center;
+    padding: 2rem;
+    font-size: 4rem;
+    color: white;
+}
+
 .imagemContatoContatar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     height: 100vh;
 }
