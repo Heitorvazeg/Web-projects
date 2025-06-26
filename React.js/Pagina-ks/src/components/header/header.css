@@ -78,3 +78,27 @@ a {
 i {
     font-size: 1.2rem;
 }
+
+@media (max-width: 360px) {
+    .headerTopo {
+        display: none;
+    }
+    .headerScroll {
+        display: none;
+    }
+}
+
+@media (max-width: 460px) {
+    .headerTopo {
+        gap: 0;
+        flex-direction: column;
+    }
+
+    .navItensHeader {
+        gap: 10%;
+    }
+    .headerScroll {
+        gap: 0;
+        flex-direction: column;
+    }
+}

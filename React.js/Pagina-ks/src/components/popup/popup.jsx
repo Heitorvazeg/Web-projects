@@ -27,6 +27,7 @@ function Popup() {
                 <i class="fa-brands fa-whatsapp icon"></i>
                 <h3 className="cont">Contato:</h3>
                 <p>(62) 99563-5794</p>
+                <a href="https://wa.me/5562995635794" className="contatar">Contatar</a>
             </div>
         </div>
     </div>
@@ -39,6 +40,7 @@ function Popup() {
                     <i class="fa-solid fa-envelope icon"></i>
                     <h3 className="cont">Contato:</h3>
                     <p>kaiosousa@gmail.com</p>
+                    <a href="mailto:heitorvazeg@gmail.com" className="contatar">Contatar</a>
                 </div>
             </div>
         </div>
