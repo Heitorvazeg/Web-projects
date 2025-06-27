@@ -21,3 +21,39 @@
 .imageLogo {
     margin-bottom: 2rem;
 }
+
+@media screen and (max-width: 768px) {
+    .home {
+        padding-top: 2rem;
+        background-position: center;
+    }
+
+    .tituloLogo {
+        margin: 0.5rem;
+    }
+
+    .imageLogo {
+        max-width: 200px;
+        margin-bottom: 1.5rem;
+    }
+
+    .home .texting {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .home {
+        padding-top: 2rem;
+    }
+
+    .imageLogo {
+        max-width: 150px;
+        margin-bottom: 1rem;
+        padding-top: 2rem;
+    }
+
+    .home .texting {
+        font-size: 1.2rem;
+    }
+}

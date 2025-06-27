@@ -103,9 +103,11 @@
 
 .suporte:hover {
     transform: scale(1.02);
-    & .descricaoHidden {
-        opacity: 1;
-    }
+}
+
+.suporte:hover .descricaoHidden {
+    opacity: 1;
+    transition-delay: 0.2s;
 }
 
 .cyberDiv {
@@ -154,9 +156,11 @@
 
 .cyber:hover {
     transform: scale(1.02);
-    & .descricaoHidden {
-        opacity: 1;
-    }
+}
+
+.cyber:hover .descricaoHidden {
+    opacity: 1;
+    transition-delay: 0.2s;
 }
 
 .infraDiv {
@@ -203,9 +207,11 @@
 
 .infra:hover {
     transform: scale(1.02);
-    & .descricaoHidden {
-        opacity: 1;
-    }
+}
+
+.infra:hover .descricaoHidden {
+    opacity: 1;
+    transition-delay: 0.2s;
 }
 
 .h {
@@ -216,4 +222,62 @@
 .p {
     padding-left: 3rem;
     padding-right: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+    .sobreNos {
+        font-size: 2.5rem;
+    }
+
+    .h {
+        font-size: 2rem;
+    }
+
+    .lorum {
+        width: 90%;
+        font-size: 0.95rem;
+    }
+
+    .suporte,
+    .infra,
+    .cyber {
+        width: 90%;
+        height: 22rem;
+    }
+
+    .p {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sobreNos {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .h {
+        font-size: 1.6rem;
+        margin: 1rem;
+    }
+
+    .lorum {
+        font-size: 0.9rem;
+        width: 95%;
+    }
+
+    .suporte,
+    .infra,
+    .cyber {
+        width: 95%;
+        height: 18rem;
+    }
+
+    .p {
+        font-size: 0.9rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }

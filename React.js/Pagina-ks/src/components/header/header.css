@@ -79,26 +79,43 @@ i {
     font-size: 1.2rem;
 }
 
-@media (max-width: 360px) {
-    .headerTopo {
-        display: none;
+@media screen and (max-width: 768px) {
+    .navItensHeader {
+        gap: 1rem;
+        font-size: 0.9rem;
     }
+
+    .contatosHeader {
+        gap: 0.5rem;
+    }
+
+    .headerTopo,
     .headerScroll {
-        display: none;
+        gap: 20%;
     }
 }
 
-@media (max-width: 460px) {
-    .headerTopo {
-        gap: 0;
-        flex-direction: column;
+@media screen and (max-width: 500px) {
+    .contatosHeader {
+        width: 20%;
+        gap: 0.3rem;
     }
 
-    .navItensHeader {
-        gap: 10%;
+    .whatsHeader,
+    .emailHeader {
+        width: 10rem;
     }
+
+    button {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .headerTopo,
     .headerScroll {
-        gap: 0;
+        font-size: 0.9rem;
+        height: auto;
+        padding: 1rem;
         flex-direction: column;
     }
 }

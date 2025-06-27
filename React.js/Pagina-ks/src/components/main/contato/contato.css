@@ -22,7 +22,7 @@
     justify-content: center;
     align-items: center;
     height: auto;
-    gap: 10%;
+    gap: 8%;
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
@@ -45,6 +45,8 @@
     overflow: hidden;
     background: url(../../../assets/S_Whatsapp.png);
     background-position: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 40%;
     height: 23rem;
     border-radius: 15px;
@@ -74,6 +76,7 @@
     z-index: 2;
     opacity: 0;
     transition: opacity 0.6s ease;
+    transition-delay: 0.4s;
 }
 
 .email:hover::before {
@@ -82,10 +85,13 @@
 
 .email:hover {
     transform: scale(1.02);
-    & .descricaoHidden {
-        opacity: 1;
-    }
 }
+
+.email:hover .descricaoHidden {
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
 
 .whatszap::before {
     border-radius: 15px;
@@ -110,7 +116,7 @@
     position: relative;
     z-index: 2;
     opacity: 0;
-    transition: opacity 0.4s ease-out;
+    transition: opacity 0.2s ease-out;
 }
 
 .whatszap:hover::before {
@@ -119,11 +125,81 @@
 
 .whatszap:hover {
     transform: scale(1.02);
-    & .descricaoHidden {
-        opacity: 1;
-    }
+}
+
+.whatszap:hover .descricaoHidden {
+    opacity: 1;
+    transition-delay: 0.3s;
 }
 
 .iconC {
     font-size: 6rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .hC {
+        font-size: 3rem;
+    }
+
+    .email,
+    .whatszap {
+        width: 45%;
+        height: 20rem;
+    }
+
+    .iconC {
+        font-size: 5rem;
+    }
+
+    .descricaoHidden {
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .imagemContatoContatar {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .email,
+    .whatszap {
+        width: 80%;
+        height: 18rem;
+    }
+
+    .hC {
+        font-size: 2.5rem;
+    }
+
+    .iconC {
+        font-size: 4rem;
+    }
+
+    .descricaoHidden p {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .email,
+    .whatszap {
+        width: 90%;
+        height: 16rem;
+    }
+
+    .hC {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .iconC {
+        font-size: 3rem;
+    }
+
+    .descricaoHidden p {
+        font-size: 0.95rem;
+        padding: 0 1rem;
+    }
 }
