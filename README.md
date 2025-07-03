@@ -1,12 +1,26 @@
-💻 Repositório de Projetos Web
+# 💻 Web Projects
 
-Este repositório contém meus projetos pessoais de desenvolvimento web, com foco em front-end e integrações com APIs.
-🎯 Objetivo
+Este repositório contém meus **projetos pessoais de desenvolvimento web**, com foco em **front-end moderno** e **integrações com APIs**.
 
-Centralizar e documentar projetos web que explorem HTML, CSS, JavaScript, React.js, e consumo de APIs.
-📂 Estrutura do Repositório
+---
 
+## 🎯 Objetivo
+
+Centralizar, organizar e documentar projetos web que utilizam tecnologias como:
+
+- 🌐 **HTML**, **CSS**, **JavaScript**
+- ⚛️ **React.js**
+- 🔗 Integração com **APIs públicas e privadas**
+
+---
+
+## 📂 Estrutura do Repositório
+
+```
 web-projects/
-├── html-css-js/     # Projetos básicos com HTML, CSS e JavaScript puro
-├── react/           # Aplicações feitas com React.js
-└── README.md        # Documentação do repositório
+├── 📁 html-css-js/   # Projetos básicos com HTML, CSS e JavaScript puro
+├── 📁 react/         # Aplicações desenvolvidas com React.js
+└── README.md         # Documentação principal do repositório
+```
+
+---
