@@ -34,4 +34,4 @@ function App3() {
 }
 
 // Props children: Passa as tags filhas do componente para dentro do componente
-// Tudo que está dentro das tagas da function se torna o children
+// Tudo que está dentro das tags da function se torna o children
