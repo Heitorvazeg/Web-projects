@@ -1,0 +1,43 @@
+header {
+    width: 100%;
+    position: fixed;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.headerEstaNoTopo {
+    background-color: transparent;
+}
+
+.headerNaoEstaNoTopo {
+    background-color: var(--secondary);
+}
+
+header img {
+    height: 50px;
+    width: auto;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a:hover {
+    color: #25d366;
+}
+
+.LinksIconsHeader {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+i:hover {
+    color: gray;
+}

@@ -33,7 +33,7 @@ function Users() {
             }
         }
 
-        load();
+        Load();
         return () => AbortControll.abort(); // Cleanup
 
     }, []) // Dependências
