@@ -27,3 +27,8 @@ button, textarea {
   border: none;
   outline: none;
 }
+
+hr {
+  margin-bottom: 20px;
+  width: 99%;
+}

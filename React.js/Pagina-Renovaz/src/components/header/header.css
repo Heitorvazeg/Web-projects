@@ -1,4 +1,5 @@
 header {
+    color: white;
     width: 100%;
     position: fixed;
     padding: 10px 20px;
@@ -28,7 +29,7 @@ header nav {
 }
 
 header nav a:hover {
-    color: #25d366;
+    color: var(--terciary);
 }
 
 .LinksIconsHeader {
@@ -38,6 +39,43 @@ header nav a:hover {
     cursor: pointer;
 }
 
-i:hover {
-    color: gray;
+.buttonH {
+    margin: 1px;
+    background-color: transparent;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+i {
+    color: white;
+}
+
+.buttonH:hover {
+    i {
+        color: rgb(63, 62, 62);
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px;
+    }
+
+    header nav {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        height: 40px;
+    }
+
+    .LinksIconsHeader {
+        font-size: 16px;
+    }
 }

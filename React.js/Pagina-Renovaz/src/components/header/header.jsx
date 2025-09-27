@@ -7,11 +7,11 @@ function Header() {
 
     useEffect(() => {
         const handleRolagem = () => {
-            if (window.scroll = 0) {
-                setEstaNoTopo(true);
+            if (window.scrollY === 0) {
+                setEstaNoTopo((prev) => prev = true);
 
             } else {
-                setEstaNoTopo(false);
+                setEstaNoTopo((prev) => prev = false);
             }
         }
 
@@ -23,7 +23,7 @@ function Header() {
     }, [])
 
     return (
-        <header className={estaNoTopo ? "headerNaoEstaNoTopo" : "headerEstaNoTopo"}>
+        <header className={estaNoTopo ? "headerEstaNoTopo" : "headerNaoEstaNoTopo"}>
             <img src="" alt="" />
             <nav>
                 <Link to="/">Inicio</Link>
@@ -31,10 +31,18 @@ function Header() {
                 <Link to="/Portfolio">Portfólio</Link>
             </nav>
             <div className="LinksIconsHeader">
-                <i className="fa-brands fa-whatsapp"></i>
-                <i className="fa-brands fa-instagram"></i>
-                <i className="fa-brands fa-tiktok"></i>
-                <i className="fa-solid fa-envelope"></i>
+                <button className="buttonH">
+                    <a href="" target="_blank"><i className="fa-brands fa-whatsapp"></i></a>
+                </button>
+                <button className="buttonH">
+                    <a href="" target="_blank"><i className="fa-brands fa-instagram"></i></a>
+                </button>
+                <button className="buttonH">
+                    <a href="" target="_blank"><i className="fa-brands fa-tiktok"></i></a>
+                </button>
+                <button className="buttonH">
+                    <a href="" target="_blank"><i className="fa-solid fa-envelope"></i></a>
+                </button>
             </div>
         </header>
     )
