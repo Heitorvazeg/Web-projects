@@ -17,7 +17,7 @@ function App() {
           });
         }, {
           root: null,
-          rootMargin: '0px 0px -144px 0px'
+          rootMargin: '0px 0px -122px 0px'
         });
   
         document.querySelectorAll('.fade-in-section').forEach(section => {

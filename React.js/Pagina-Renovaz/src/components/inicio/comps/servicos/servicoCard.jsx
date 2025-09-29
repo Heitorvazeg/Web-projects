@@ -1,9 +1,13 @@
-function ServicoCard({titulo, descricao, srcImage}) {
+import "./servicoCard.css";
+
+function ServicoCard({titulo, descricao, srcImage, altImage}) {
     return (
-        <div className="servicoCard">
-            <img src="" alt="" />
-            <h1>Titulo</h1>
-            <p>Descriçao</p>
+        <div className="servicoCard fade-in-section">
+            <img src={srcImage} alt={altImage} className="imgServicos"/>
+            <div className="td">
+                <h1>{titulo}</h1>
+                <p>{descricao}</p>
+            </div>
         </div>
     )
 }

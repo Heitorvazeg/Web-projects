@@ -1,0 +1,54 @@
+.servicoCard {
+    width: 30%;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    margin: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicoCard:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.imgServicos {
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+
+.td {
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media (max-width: 1024px) {
+    .servicoCard {
+        width: 45%;
+        margin: 1rem 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .servicoCard {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .td h1 {
+        font-size: 1.4rem;
+    }
+
+    .td p {
+        font-size: 1rem;
+    }
+
+    .imgServicos {
+        height: 160px;
+    }
+}
