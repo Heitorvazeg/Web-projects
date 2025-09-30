@@ -2,7 +2,7 @@ import "./servicoCard.css";
 
 function ServicoCard({titulo, descricao, srcImage, altImage}) {
     return (
-        <div className="servicoCard fade-in-section">
+        <div className="servicoCard">
             <img src={srcImage} alt={altImage} className="imgServicos"/>
             <div className="td">
                 <h1>{titulo}</h1>

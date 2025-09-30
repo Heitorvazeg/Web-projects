@@ -1,28 +1,39 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import planej from "./planej.jpg"
+import usinas from "./usina.jpg"
+import "./portfolio.css"
 
 function Portfolio() {
     const [index, setIndex] = useState(0);
 
     const slides = [
         {
-            "srcImage": "",
-            "altImage": "",
+            "srcImage": planej,
+            "altImage": "Imagem de planejamento de obra",
+            "descricaoImage": "Construção feita não sei aonde",
+            "tituloObra": "Obra feita ali",
+
+        },
+        {
+            "srcImage": usinas,
+            "altImage": "Imagem de usinas de obra",
+            "descricaoImage": "Descrição descrição descrição",
+            "tituloObra": "Obra feita ali",
 
         },
         {
             "srcImage": "",
             "altImage": "",
+            "descricaoImage": "",
+            "tituloObra": "Obra feita ali",
 
         },
         {
             "srcImage": "",
             "altImage": "",
-
-        },
-        {
-            "srcImage": "",
-            "altImage": "",
+            "descricaoImage": "",
+            "tituloObra": "Obra feita ali",
 
         },
     ]
@@ -36,8 +47,8 @@ function Portfolio() {
     };
 
     return (
-        <section>
-            <div className="topoPortfolio">
+        <section className="portfolio">
+            <div className="topoPortfolio fade-in-section">
                 <h1>Nosso Portfólio</h1>
                 <p>No portfólio da Renovaz Construtora, você encontra exemplos concretos do nosso trabalho ao longo de mais de 20 anos de experiência
                       desde construções e reformas até acabamentos e instalações completas.
@@ -45,14 +56,15 @@ function Portfolio() {
                      ideias em realidade, sempre respeitando as necessidades e expectativas de nossos clientes.</p>
             </div>
             <div className="carousel">
-                <button className="navLeft">&lt;</button>
+                <button className="navPtr" onClick={prevSlide}>&lt;</button>
                 <div className="slide">
-                    <img src={slides[index].srcImage} alt={slides[index].altImage} />
-                    <p className="descricaoSlide"></p>
+                    <img src={slides[index].srcImage} alt={slides[index].altImage} className="active"/>
+                    <div className="tituloObra">{slides[index].tituloObra}</div>
                 </div>
-                <button className="navRight">&gt;</button>
+                <button className="navPtr" onClick={nextSlide}>&gt;</button>
             </div>
-            <Link to="/Portfolio">Conheça mais sobre nosso porfólio</Link>
+            <p className="descricaoSlide">{slides[index].descricaoImage}</p>
+            <button className="conhecaMais"><Link to="/Portfolio">Conheça mais sobre nosso porfólio</Link></button>
         </section>
     )
 }

@@ -7,7 +7,7 @@ function Servicos() {
     return (
         <section className="servicos">
             <h1>Nossa carta de serviços</h1>
-            <div className="cards">
+            <div className="cards fade-in-section">
                 <ServicoCard
                     titulo="Construção"
                     descricao="Realizamos projetos de construção do zero,
