@@ -2,12 +2,13 @@ import ServicoCard from "./servicoCard";
 import "./servicos.css";
 import ReformaImg from "./reforma.jpg";
 import ConstrucaoImg from "./construcao.jpg";
+import Plan from "./plan.jpg"
 
 function Servicos() {
     return (
         <section className="servicos">
             <h1>Nossa carta de serviços</h1>
-            <div className="cards fade-in-section">
+            <div className="cards">
                 <ServicoCard
                     titulo="Construção"
                     descricao="Realizamos projetos de construção do zero,
@@ -29,7 +30,7 @@ function Servicos() {
                      incluindo pisos, revestimentos, pintura e design de interiores, garantindo um resultado estético e duradouro.
                       Além disso, executamos instalações
                       hidráulicas e prediais com eficiência."
-                    srcImage="./acai.jpg"
+                    srcImage={Plan}
                     altImage="Imagem de acabamentos"
                 ></ServicoCard>
             </div>

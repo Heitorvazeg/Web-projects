@@ -1,0 +1,32 @@
+.FaixaFinal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    color: black;
+    height: 140px;
+    gap: 1rem;
+}
+
+.botaoFaixa {
+    width: 100px;
+    height: 40px;
+    border: solid 1px black;
+}
+
+.botaoFaixa i {
+    font-size: 2rem;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.botaoFaixa:hover {
+    cursor: pointer;
+    border: none;
+    background-color: rgb(31, 30, 30);
+    & i {
+        color: white;
+    }
+}

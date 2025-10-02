@@ -1,0 +1,69 @@
+.card {
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 9rem;
+    padding-right: 9rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card.reverse {
+    flex-direction: row-reverse;
+}
+
+.card h1 {
+    width: 10rem;
+    height: auto;
+}
+
+.card img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 2px 3px 8px black;
+}
+
+.card p {
+    text-align: center;
+    margin: 2rem;
+}
+
+.descricaoPort {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+@media (max-width: 900px) {
+    .card {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        flex-direction: column-reverse;
+    }
+
+    .card.reverse {
+        flex-direction: column-reverse;
+    }
+
+    .card img {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        flex-direction: column-reverse;
+    }
+
+    .card img {
+        width: 100%;
+    }
+}

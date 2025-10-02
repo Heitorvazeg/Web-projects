@@ -34,6 +34,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .navPtr {
@@ -53,15 +54,30 @@
 }
 
 .slide {
-    position: relative;
-    width: 50%;
+    opacity: 0;
+    position: absolute;
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: all 0.6s ease;
+    filter: blur(4px);
+    z-index: 1;
+    pointer-events: none;
 }
 
-.carousel img {
+.slidesWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%; /* ajuste */
+  height: 400px; /* ajuste */
+  position: relative;
+  overflow: hidden;
+}
+
+.slide img {
     height: 360px;
     width: 100%;
     box-shadow: 2px 3px 8px black;
@@ -69,7 +85,7 @@
     object-fit: cover;
 }
 
-.carousel img:hover {
+.slide img:hover {
     transform: scale(1.02);
     filter: brightness(70%);
 }
@@ -92,12 +108,44 @@
     transform: translateX(-50%) translateY(-19px);
 }
 
+.slide.active {
+  opacity: 1;
+  transform: scale(1);
+  filter: blur(0);
+  z-index: 3;
+  pointer-events: auto;
+}
+
+/* Imagem da esquerda */
+.slide.left {
+  opacity: 0.8;
+  transform: translateX(-220px) scale(0.8);
+  z-index: 2;
+    pointer-events: none;
+}
+
+/* Imagem da direita */
+.slide.right {
+  opacity: 0.8;
+  transform: translateX(220px) scale(0.8);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Esconde o resto */
+.slide.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .descricaoSlide {
     margin-bottom: 2rem;
     font-size: clamp(0.9rem, 1vw, 1.1rem);
 }
 
 .conhecaMais {
+    display: flex;
+    align-items: center;
     border: solid 1px black;
     margin-bottom: 2rem;
     height: 50px;
@@ -127,10 +175,11 @@
     }
 
     .slide {
-        width: 60%;
+        width: 90%;
     }
 
     .carousel img {
+        width: 80%;
         max-height: 280px;
     }
 }
@@ -141,8 +190,16 @@
         font-size: 0.95rem;
     }
 
+    .slide {
+        width: 95%;
+    }
+
+    .carousel {
+        margin: 0;
+    }
+
     .carousel img {
-        max-height: 200px;
+        max-height: 220px;
     }
 
     .descricaoSlide {

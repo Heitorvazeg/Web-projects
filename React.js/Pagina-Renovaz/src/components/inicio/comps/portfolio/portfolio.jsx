@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import planej from "./planej.jpg"
-import usinas from "./usina.jpg"
+import planej from "./planej.jpg";
+import usinas from "./usina.jpg";
+import s from "./s.jpg";
+import t from "./t.jpg";
 import "./portfolio.css"
 
 function Portfolio() {
@@ -23,14 +25,14 @@ function Portfolio() {
 
         },
         {
-            "srcImage": "",
+            "srcImage": s,
             "altImage": "",
-            "descricaoImage": "",
+            "descricaoImage": "Descrição ao ao ao ao",
             "tituloObra": "Obra feita ali",
 
         },
         {
-            "srcImage": "",
+            "srcImage": t,
             "altImage": "",
             "descricaoImage": "",
             "tituloObra": "Obra feita ali",
@@ -57,14 +59,29 @@ function Portfolio() {
             </div>
             <div className="carousel">
                 <button className="navPtr" onClick={prevSlide}>&lt;</button>
-                <div className="slide">
-                    <img src={slides[index].srcImage} alt={slides[index].altImage} className="active"/>
-                    <div className="tituloObra">{slides[index].tituloObra}</div>
-                </div>
+                    <div className="slidesWrapper">
+                        {slides.map((slide, i) => {
+                            let className = "slide";
+                            if (i === index) className += " active"; // imagem do meio
+                            else if (i === (index + 1) % slides.length) className += " right"; // próxima
+                            else if (i === (index - 1 + slides.length) % slides.length)
+                            className += " left"; // anterior
+                            else className += " hidden"; // esconde o resto
+
+                            return (
+                            <div className={className} key={i}>
+                                <img src={slide.srcImage} alt={slide.altImage} />
+                                {i === index && (
+                                <div className="tituloObra">{slide.tituloObra}</div>
+                                )}
+                            </div>
+                            );
+                        })}
+                    </div>
                 <button className="navPtr" onClick={nextSlide}>&gt;</button>
             </div>
             <p className="descricaoSlide">{slides[index].descricaoImage}</p>
-            <button className="conhecaMais"><Link to="/Portfolio">Conheça mais sobre nosso porfólio</Link></button>
+            <Link to="/Portfolio" className="conhecaMais">Conheça mais sobre nosso porfólio</Link>
         </section>
     )
 }

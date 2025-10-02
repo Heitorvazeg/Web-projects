@@ -4,6 +4,8 @@ import Home from "./comps/home/home";
 import SobreInicio from "./comps/sobreInicio/sobreInicio";
 import Servicos from "./comps/servicos/servicos";
 import Portfolio from "./comps/portfolio/portfolio";
+import Midias from "./comps/midias/midias";
+import FaixaFinal from "./comps/midias/faixaFinal";
 
 function Inicio() {
     return (
@@ -13,6 +15,8 @@ function Inicio() {
             <SobreInicio></SobreInicio>
             <Servicos></Servicos>
             <Portfolio></Portfolio>
+            <Midias></Midias>
+            <FaixaFinal></FaixaFinal>
             <Footer></Footer>
         </div>
     )

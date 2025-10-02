@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import "./App.css";
 import Inicio from "./components/inicio/inicio";
@@ -6,7 +6,8 @@ import SobrePag from "./components/sobre/sobrePag";
 import Portfolio from "./components/portfolio/portfolio";
 import WhatsAppButton from "./components/whatsButton/whatsButton";
 
-function App() {
+function ScroolObserver() {
+    const location = useLocation();
     useEffect(() => {
         const observer = new IntersectionObserver((entries, observer) => {
           entries.forEach(entry => {
@@ -20,25 +21,31 @@ function App() {
           rootMargin: '0px 0px -122px 0px'
         });
   
-        document.querySelectorAll('.fade-in-section').forEach(section => {
-          observer.observe(section);
+        const elements = document.querySelectorAll('.fade-in-section');
+        elements.forEach(section => {
+            section.classList.remove("is-visible");
+            observer.observe(section);
         });
   
         return () => observer.disconnect();
         
-    }, []);
+    }, [location]);
 
+    return null;
+}
+
+function App() {
   return (
       <BrowserRouter>
-        <Routes>
-            <Route path="/" element={<Inicio/>}></Route>
-            <Route path="/Sobre" element={<SobrePag/>}></Route>
-            <Route path="/Portfolio" element={<Portfolio/>}></Route>
-        </Routes>
+          <ScroolObserver />
+            <Routes>
+                <Route path="/" element={<Inicio/>}></Route>
+                <Route path="/Sobre" element={<SobrePag/>}></Route>
+                <Route path="/Portfolio" element={<Portfolio/>}></Route>
+            </Routes>
 
-        <WhatsAppButton/>
-        
-      </BrowserRouter>
+            <WhatsAppButton/>
+        </BrowserRouter>
   )
 }
 

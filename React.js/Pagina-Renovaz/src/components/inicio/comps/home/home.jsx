@@ -1,5 +1,5 @@
 import "./home.css";
-import videoSrc from "./video.mp4";
+import videoSrc from "/video.mp4";
 
 function Home() {
     return (
