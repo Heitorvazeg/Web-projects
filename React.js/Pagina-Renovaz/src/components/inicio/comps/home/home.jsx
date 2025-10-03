@@ -1,5 +1,6 @@
 import "./home.css";
 import videoSrc from "/video.mp4";
+import logo from "/logo3.jpg";
 
 function Home() {
     return (
@@ -9,8 +10,8 @@ function Home() {
             </video>
             <div className="overlay"></div>
             <div className="conteudo">
-                <img src="" alt="" />
-                <h1 className="fade-in-section">Renovar</h1>
+                <img src={logo} alt="Logo Renovaz Construtora" className="logo fade-in-section"/>
+                <h1 className="fade-in-section">"Transformando ideias em obras de excelência"</h1>
             </div>
         </section>
     )

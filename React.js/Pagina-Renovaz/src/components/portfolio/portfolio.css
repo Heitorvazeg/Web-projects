@@ -23,10 +23,12 @@
 }
 
 .portfolioInicio h1 {
+    font-family: 'Poppins', 'Times New Roman', Times, serif;
     z-index: 100;
 }
 
 .portfolioInicio p {
+    font-family: 'Lato', 'Times New Roman', Times, serif;
     text-align: center;
     width: 70%;
     z-index: 100;
@@ -39,10 +41,9 @@
 }
 
 .PortfolioHome {
-
-    width: 100%;
-    background-color: black;
-    padding-top: 4rem;
+    background: linear-gradient(0deg, rgb(24, 24, 24), black);
+    background-size: cover;
+    background-repeat: no-repeat;
     color: white;
     display: flex;
     flex-direction: column;
@@ -52,8 +53,24 @@
 }
 
 .PortfolioHome hr {
-    margin: 2rem;
+    margin: 1rem;
     width: 70%;
+}
+
+.PortfolioHome h1 {
+    padding-top: 2rem;
+    font-family: 'Poppins', 'Times New Roman', Times, serif;
+}
+
+.PortfolioHome p {
+    font-family: 'Lato', 'Times New Roman', Times, serif;
+}
+
+.tituloHr {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media (max-width: 900px) {

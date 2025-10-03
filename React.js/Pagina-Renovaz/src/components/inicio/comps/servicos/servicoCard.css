@@ -27,6 +27,14 @@
     padding-right: 20px;
 }
 
+.td h1 {
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
+}
+
+.td p {
+    font-family: 'Lato', 'Times New Roman', Times, serif;
+}
+
 @media (max-width: 1024px) {
     .servicoCard {
         width: 45%;

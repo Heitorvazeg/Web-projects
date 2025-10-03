@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import "./footer.css"
+import logo from "/logo2.png"
 
 function Footer() {
     return (
         <footer>
             <div className="footerTotal">
-                <img src="" alt="" />
+                <img src={logo} alt="Logo Renovaz" />
                 <nav className="navFooter">
                     <Link to="/">Inicio</Link>
                     <Link to="/Sobre">Sobre</Link>
@@ -13,18 +14,18 @@ function Footer() {
                 </nav>
                 <div className="faleConosco">
                     <h1>Fale Conosco</h1>
-                    <h1>62 99563-5794</h1>
+                    <h1>62 99369-9805</h1>
                     <button className="buttonH">
-                        <a href="" target="_blank f"><i className="fa-brands fa-whatsapp f"></i></a>
+                        <a href="https://wa.me/5562993699805" target="_blank"><i className="fa-brands fa-whatsapp"></i></a>
                     </button>
                     <button className="buttonH">
-                        <a href="" target="_blank"><i className="fa-brands fa-instagram f"></i></a>
+                        <a href="https://www.instagram.com/renovazconstrutora/" target="_blank"><i className="fa-brands fa-instagram"></i></a>
                     </button>
                     <button className="buttonH">
-                        <a href="" target="_blank"><i className="fa-brands fa-tiktok f"></i></a>
+                        <a href="https://www.tiktok.com/@mestredosprojetos?lang=pt-BR" target="_blank"><i className="fa-brands fa-tiktok"></i></a>
                     </button>
                     <button className="buttonH">
-                        <a href="" target="_blank"><i className="fa-solid fa-envelope f"></i></a>
+                        <a href="mailto:heitorvazeg@gmail.com" target="_blank"><i className="fa-solid fa-envelope"></i></a>
                     </button>
                 </div>
             </div>

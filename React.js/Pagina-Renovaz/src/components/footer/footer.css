@@ -27,6 +27,7 @@ footer a:hover {
 }
 
 .navFooter {
+  font-family: 'Roboto', 'Times New Roman', Times, serif;
     font-size: 20px;
     color: gray;
     display: flex;
@@ -40,6 +41,7 @@ footer .navFooter a:hover {
 }
 
 .faleConosco {
+  font-family: 'Roboto', 'Times New Roman', Times, serif;
     text-align: center;
 }
 
@@ -52,6 +54,7 @@ footer .faleConosco i:hover {
 }
 
 .direitosReservados {
+  font-family: 'Times New Roman', Times, serif;
     color: gray;
     width: 100%;
     display: flex;

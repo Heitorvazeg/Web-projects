@@ -8,9 +8,11 @@
     align-items: center;
     padding-top: 2rem;
     padding-bottom: 4rem;
+    gap: 4rem;
 }
 
 .midias p {
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
     margin: 1rem;
     width: 70%;
     text-align: center;
@@ -18,13 +20,13 @@
 
 .Midia {
     margin: 2rem 0;
-    padding-left: 9rem;
-    padding-right: 9rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .Midia.reverse {
@@ -32,12 +34,13 @@
 }
 
 .Midia h1 {
+    font-family: 'Poppins', 'Times New Roman', Times, serif;
     width: 10rem;
     height: auto;
 }
 
 .Midia .bg-video2 {
-    height: 400px;
+    height: 550px;
     width: 400px;
     object-fit: cover;
     border-radius: 10px;
@@ -50,6 +53,35 @@
     flex-direction: column;
     align-items: center;
     flex: 1;
+}
+
+.btnM i{
+    margin: 10px;
+    font-size: 60px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btnM.ins i:hover {
+    color: rgb(231, 25, 138);
+}
+
+.insL {
+    transition: all 0.3s ease-in-out;
+}
+
+.insL:hover {
+    color: rgb(231, 25, 138);
+}
+
+.btnM.tik i:hover {
+    color: rgb(14, 71, 124);
+}
+
+.tikL {
+    transition: all 0.3s ease-in-out;
+}
+.tikL:hover {
+    color: rgb(14, 71, 124);
 }
 
 @media(max-width: 900px) {
@@ -67,7 +99,7 @@
 
     .Midia .bg-video2 {
         width: 80%;
-        height: 450px;
+        height: 500px;
         margin-bottom: 1rem;
     }
 
@@ -81,8 +113,13 @@
 }
 
 @media (max-width: 600px) {
+    .Midia {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
     .Midia .bg-video2 {
-        width: 100%;
+        width: 90%;
         height: 350px;
     }
 

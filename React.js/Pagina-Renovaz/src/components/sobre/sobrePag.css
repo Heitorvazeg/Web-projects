@@ -1,9 +1,11 @@
 .sobrePag {
     width: 100%;
     height: auto;
+    color: black;
 }
 
 .sobreNoss {
+    background: linear-gradient(0deg, rgb(185, 185, 185), rgb(248, 247, 247));
     width: 100%;
     height: auto;
     display: flex;
@@ -13,10 +15,12 @@
 }
 
 .sobreNoss h1 {
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
     margin: 2rem;
 }
 
 .sobreNoss p {
+    font-family: 'lato', 'Times New Roman', Times, serif;
     margin: 3rem;
     width: 80%;
     text-align: center;

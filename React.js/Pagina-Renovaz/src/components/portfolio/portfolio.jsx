@@ -15,11 +15,15 @@ function Portfolio() {
                 <div className="overlay"></div>
                  <h1 className="fade-in-section">Portfólio</h1>
                  <hr />
-                <p className="fade-in-section">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id dolorum, nemo, libero nesciunt sapiente, expedita eius quo nihil quod dolor quibusdam! Obcaecati repellendus odio incidunt nostrum sit, at natus! Tempore.</p>
+                <p className="fade-in-section">Confira alguns dos projetos
+                     e obras já realizados pela nossa construtora. 
+                     Aqui você pode ver exemplos concretos do nosso trabalho e o resultado de cada construção entregue.</p>
             </div>
             <div className="PortfolioHome ">
-                <h1 className="fade-in-section">Construções</h1>
-                <hr />
+                <div className="tituloHr">
+                    <h1 className="fade-in-section">Construções</h1>
+                    <hr />
+                </div>
                 <CardPortfolioED
                     srcAlt="altaerntiv"
                     srcImage={imagem}

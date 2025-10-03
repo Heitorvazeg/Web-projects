@@ -6,6 +6,16 @@ import SobrePag from "./components/sobre/sobrePag";
 import Portfolio from "./components/portfolio/portfolio";
 import WhatsAppButton from "./components/whatsButton/whatsButton";
 
+function ScrollTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function ScroolObserver() {
     const location = useLocation();
     useEffect(() => {
@@ -38,6 +48,7 @@ function App() {
   return (
       <BrowserRouter>
           <ScroolObserver />
+          <ScrollTop />
             <Routes>
                 <Route path="/" element={<Inicio/>}></Route>
                 <Route path="/Sobre" element={<SobrePag/>}></Route>

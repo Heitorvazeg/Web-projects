@@ -15,11 +15,13 @@
 }
 
 .tituloSobreInicio {
+    font-family: 'Lato';
     margin: 2rem;
     text-align: center;
 }
 
 .sobreInicio p {
+    font-family: 'Poppins';
     font-size: 17px;
     width: 70%;
     text-align: center;
@@ -27,6 +29,7 @@
 }
 
 .dois {
+    font-family: 'Lato';
     width: 60%;
     text-align: center;
     margin-bottom: 20px;
