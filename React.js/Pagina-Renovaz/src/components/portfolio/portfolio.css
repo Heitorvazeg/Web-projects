@@ -40,6 +40,11 @@
     z-index: 100;
 }
 
+.PortfolioHome h1 {
+    width: 100%;
+    text-align: center;
+}
+
 .PortfolioHome {
     background: linear-gradient(0deg, rgb(24, 24, 24), black);
     background-size: cover;
@@ -76,6 +81,14 @@
 @media (max-width: 900px) {
     .PortfolioHome hr {
         margin: 0.5rem;
+    }
+
+    .PortfolioHome h1 {
+        width: 100%;
+    }
+
+    .PortfolioHome p {
+        width: 90%;
     }
 }
 

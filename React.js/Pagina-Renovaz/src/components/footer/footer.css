@@ -33,7 +33,7 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 footer .navFooter a:hover {
@@ -51,6 +51,10 @@ footer .faleConosco i {
 
 footer .faleConosco i:hover {
   color: rgb(192, 190, 190);
+}
+
+footer .faleConosco p {
+  color: gray;
 }
 
 .direitosReservados {

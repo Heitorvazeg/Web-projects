@@ -27,6 +27,8 @@ function Footer() {
                     <button className="buttonH">
                         <a href="mailto:heitorvazeg@gmail.com" target="_blank"><i className="fa-solid fa-envelope"></i></a>
                     </button>
+                    <p>Jardim Tiradentes, Aparecida de Goiânia - GO</p>
+                    <p>CEP: 74961-535</p>
                 </div>
             </div>
             <hr />

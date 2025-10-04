@@ -10,7 +10,7 @@ function Servicos() {
             <h1>Nossa carta de serviços</h1>
             <div className="cards">
                 <ServicoCard
-                    titulo="Construção"
+                    titulo="Construção em Condomínios"
                     descricao="Realizamos projetos de construção do zero,
                      transformando terrenos e ideias em edificações sólidas, modernas e funcionais,
                       sempre com qualidade em cada etapa da obra."
